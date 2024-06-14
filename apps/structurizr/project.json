@@ -1,0 +1,18 @@
+{
+  "name": "structurizr",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/structurizr",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "docker compose -f ./apps/structurizr/docker-compose.yaml -p online-local-market-platform-docs up"
+        ],
+        "parallel": false
+      }
+    }
+  }
+}
