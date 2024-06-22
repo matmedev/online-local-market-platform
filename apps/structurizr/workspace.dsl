@@ -8,6 +8,10 @@ workspace {
     backofficeAgent = person "Backoffice Agent"
 
     platform = softwareSystem "Online Local Market Platform" {
+      !docs doc
+      !adrs doc/adr
+      !plugin plantuml.PlantUMLEncoderPlugin
+
       frontend = group "Frontend" {
         commerceWebApp = container "Buyer web app" "Next.js" "Web app for buyers"
         commerceNativeApp = container "Buyer app" "Expo (RN)" "Native app for buyers"
@@ -33,30 +37,30 @@ workspace {
         hasura -> database "persists and queries data to/from"
         hasura -> notificationService "connects requests to"
       }
+
+      commerceWebApp -> clientFrontendServer "loads data from" {
+        tags = indirect
+      }
+
+      backofficeWebApp -> backofficeFrontendServer "loads data from" {
+        tags = indirect
+      }
+
+      commerceNativeApp -> clientFrontendServer "loads data from"
+      merchantNativeApp -> clientFrontendServer "loads data from"
+      pickUpPointNativeApp -> clientFrontendServer "loads data from"
+
+      commerceWebApp -> hasura "subscribe to events from"
+      commerceNativeApp -> hasura "subscribe to events from"
+      merchantNativeApp -> hasura "subscribe to events from"
+      pickUpPointNativeApp -> hasura "subscribe to events from"
     }
 
-    buyer -> commerceWebApp "uses"
-    buyer -> commerceNativeApp "uses"
-    merchant -> merchantNativeApp "uses"
-    pickUpPoint -> pickUpPointNativeApp "uses"
-    backofficeAgent -> backofficeWebApp "uses"
-
-    commerceWebApp -> clientFrontendServer "loads data from" {
-      tags = indirect
-    }
-
-    backofficeWebApp -> backofficeFrontendServer "loads data from" {
-      tags = indirect
-    }
-
-    commerceNativeApp -> clientFrontendServer "loads data from"
-    merchantNativeApp -> clientFrontendServer "loads data from"
-    pickUpPointNativeApp -> clientFrontendServer "loads data from"
-
-    commerceWebApp -> hasura "subscribe to events from"
-    commerceNativeApp -> hasura "subscribe to events from"
-    merchantNativeApp -> hasura "subscribe to events from"
-    pickUpPointNativeApp -> hasura "subscribe to events from"
+    buyer -> platform.commerceWebApp "uses"
+    buyer -> platform.commerceNativeApp "uses"
+    merchant -> platform.merchantNativeApp "uses"
+    pickUpPoint -> platform.pickUpPointNativeApp "uses"
+    backofficeAgent -> platform.backofficeWebApp "uses"
   }
 
   views {

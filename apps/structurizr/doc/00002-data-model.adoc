@@ -1,0 +1,78 @@
+== Data Model
+
+```plantuml
+@startuml
+object "User" as user {
+  + name
+  + email
+  + phone
+}
+
+object "Merchant" as merchant {
+  + name
+  + location
+  + products
+}
+
+user "n" --> "1" merchant
+
+object "Pick Up Point" as pickUpPoint {
+  + name
+  + location
+  + openingHours
+}
+
+user "n" --> "1" pickUpPoint
+'Merchants can act as pick up points or could have multiple pick up points to choose from
+merchant "n" --> "n" pickUpPoint
+
+object "Order" as order {
+  + status
+}
+
+object "Order Status" as orderStatus {
+  + CREATED
+  + CONFIRMED
+  + DECLINED
+  + CANCELLED
+  + PICKED
+  + READY_FOR_PICKUP
+  + FULFILLED
+}
+
+object "Order Item" as orderItem {
+  + quantity
+  + product
+}
+
+object "Product" as product {
+  + name
+  + price
+}
+
+object "Product Type" as productType {
+  + name
+  + description
+  + picture
+  + category
+  + unit
+}
+
+object "Product Category" as productCategory {
+  + name
+}
+
+productType "n" --> "n" productCategory
+
+orderItem --> product
+product --> merchant
+
+product --> productType
+
+order --> orderStatus
+order --> merchant: fulfilledBy
+order ---> pickUpPoint: pickUpPoint
+order --> user: createdBy
+order "1" --> "n" orderItem
+@enduml
+```

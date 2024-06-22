@@ -1,0 +1,52 @@
+== Order fulfillment
+
+=== Merchant as Driver
+```plantuml
+@startuml
+actor Customer
+actor Merchant
+actor "Pick Up Point" as PUP
+
+participant App
+
+Customer -> App: Compose and submit order at a merchant
+App -> Merchant: Notify merchant of new order
+App -> PUP: Notify pick up point of new order
+Merchant --> App: Confirm order if it's possible to fulfill
+PUP --> App: Confirm if pick up point is available
+App -> Customer: Notify customer of order confirmation
+Merchant -> App: Mark order as ready for delivery
+App -> PUP: Notify pick up point of order to be delivered
+Merchant -> PUP: Deliver order to pick up point
+PUP -> App: Confirm order arrival
+App -> Customer: Notify customer of order arrival
+Customer -> PUP: Pick up order
+@enduml
+```
+
+=== Separate Driver
+```plantuml
+@startuml
+actor Customer
+actor Merchant
+actor "Pick Up Point" as PUP
+actor Driver
+
+participant App
+
+Customer -> App: Compose and submit order at a merchant
+App -> Merchant: Notify merchant of new order
+App -> PUP: Notify pick up point of new order
+Merchant --> App: Confirm order if it's possible to fulfill
+PUP --> App: Confirm if pick up point is available
+App -> Customer: Notify customer of order confirmation
+Merchant -> App: Mark order as ready for delivery
+App -> Driver: Notify driver of order to be delivered
+App -> PUP: Notify pick up point of order to be delivered
+Merchant -> Driver: Gives order to driver
+Driver -> PUP: Deliver order to pick up point
+PUP -> App: Confirm order arrival
+App -> Customer: Notify customer of order arrival
+Customer -> PUP: Pick up order
+@enduml
+```

@@ -3,8 +3,7 @@
   "description" : "Description",
   "documentation" : { },
   "id" : 1,
-  "lastModifiedAgent" : "structurizr-javascript",
-  "lastModifiedDate" : "2024-06-14T08:06:17Z",
+  "lastModifiedDate" : "2024-06-22T16:49:28Z",
   "model" : {
     "people" : [ {
       "id" : "1",
@@ -16,24 +15,24 @@
       "relationships" : [ {
         "description" : "uses",
         "destinationId" : "6",
-        "id" : "20",
+        "id" : "29",
         "properties" : {
-          "structurizr.dsl.identifier" : "29504fc1-3fba-4010-8c57-92271aae9061"
+          "structurizr.dsl.identifier" : "6c76dca8-b467-4e9f-ad6e-5d9b468f9fdd"
         },
         "sourceId" : "1",
         "tags" : "Relationship"
       }, {
         "description" : "uses",
         "destinationId" : "5",
-        "id" : "21",
-        "linkedRelationshipId" : "20",
+        "id" : "30",
+        "linkedRelationshipId" : "29",
         "sourceId" : "1"
       }, {
         "description" : "uses",
         "destinationId" : "7",
-        "id" : "22",
+        "id" : "31",
         "properties" : {
-          "structurizr.dsl.identifier" : "88657e7b-f296-41bd-ba66-77dcab05d8a2"
+          "structurizr.dsl.identifier" : "519a0912-485d-4974-8022-f23a388cf9b2"
         },
         "sourceId" : "1",
         "tags" : "Relationship"
@@ -49,17 +48,17 @@
       "relationships" : [ {
         "description" : "uses",
         "destinationId" : "8",
-        "id" : "23",
+        "id" : "32",
         "properties" : {
-          "structurizr.dsl.identifier" : "13fe6ef9-6348-412c-9b73-7d13cda4acc5"
+          "structurizr.dsl.identifier" : "b96a862b-ac02-4fe6-bd58-01db0784e9cb"
         },
         "sourceId" : "2",
         "tags" : "Relationship"
       }, {
         "description" : "uses",
         "destinationId" : "5",
-        "id" : "24",
-        "linkedRelationshipId" : "23",
+        "id" : "33",
+        "linkedRelationshipId" : "32",
         "sourceId" : "2"
       } ],
       "tags" : "Element,Person"
@@ -73,17 +72,17 @@
       "relationships" : [ {
         "description" : "uses",
         "destinationId" : "9",
-        "id" : "25",
+        "id" : "34",
         "properties" : {
-          "structurizr.dsl.identifier" : "0c9602b9-6755-4b29-ab23-5682eada98ae"
+          "structurizr.dsl.identifier" : "3a30977d-1040-49a7-b307-e98ad2e1f6f8"
         },
         "sourceId" : "3",
         "tags" : "Relationship"
       }, {
         "description" : "uses",
         "destinationId" : "5",
-        "id" : "26",
-        "linkedRelationshipId" : "25",
+        "id" : "35",
+        "linkedRelationshipId" : "34",
         "sourceId" : "3"
       } ],
       "tags" : "Element,Person"
@@ -97,158 +96,163 @@
       "relationships" : [ {
         "description" : "uses",
         "destinationId" : "10",
-        "id" : "27",
+        "id" : "36",
         "properties" : {
-          "structurizr.dsl.identifier" : "f87b5098-deef-41d5-8bb0-6b9373abf9f0"
+          "structurizr.dsl.identifier" : "b5e9902f-da58-45e4-8a48-e4260cffca4e"
         },
         "sourceId" : "4",
         "tags" : "Relationship"
       }, {
         "description" : "uses",
         "destinationId" : "5",
-        "id" : "28",
-        "linkedRelationshipId" : "27",
+        "id" : "37",
+        "linkedRelationshipId" : "36",
         "sourceId" : "4"
       } ],
       "tags" : "Element,Person"
     } ],
     "softwareSystems" : [ {
       "containers" : [ {
-        "description" : "Next.js web app for buyers",
+        "description" : "Next.js",
         "documentation" : { },
         "group" : "Frontend",
         "id" : "6",
         "name" : "Buyer web app",
         "properties" : {
-          "structurizr.dsl.identifier" : "commercewebapp"
+          "structurizr.dsl.identifier" : "platform.commercewebapp"
         },
         "relationships" : [ {
           "description" : "loads data from",
           "destinationId" : "11",
-          "id" : "29",
+          "id" : "20",
           "properties" : {
-            "structurizr.dsl.identifier" : "6cfd1df9-bdef-4128-a467-715040808c8e"
+            "structurizr.dsl.identifier" : "b4f2e091-77dd-476f-9a79-a8ca8ac53ad2"
           },
           "sourceId" : "6",
           "tags" : "Relationship,=,indirect"
         }, {
           "description" : "subscribe to events from",
           "destinationId" : "13",
-          "id" : "34",
+          "id" : "25",
           "properties" : {
-            "structurizr.dsl.identifier" : "cc4c5c5d-11a9-499d-a45b-a11918c14f71"
+            "structurizr.dsl.identifier" : "227daac3-0d21-4fad-9a92-14674e215272"
           },
           "sourceId" : "6",
           "tags" : "Relationship"
         } ],
-        "tags" : "Element,Container"
+        "tags" : "Element,Container",
+        "technology" : "Web app for buyers"
       }, {
-        "description" : "React Native app for buyers",
+        "description" : "Expo (RN)",
         "documentation" : { },
         "group" : "Frontend",
         "id" : "7",
         "name" : "Buyer app",
         "properties" : {
-          "structurizr.dsl.identifier" : "commercenativeapp"
+          "structurizr.dsl.identifier" : "platform.commercenativeapp"
         },
         "relationships" : [ {
           "description" : "loads data from",
           "destinationId" : "11",
-          "id" : "31",
+          "id" : "22",
           "properties" : {
-            "structurizr.dsl.identifier" : "4f5a96cf-7178-4eec-a4da-bfce123df241"
+            "structurizr.dsl.identifier" : "4c630d30-9c25-4b17-a357-34ac6e1fbcd8"
           },
           "sourceId" : "7",
           "tags" : "Relationship"
         }, {
           "description" : "subscribe to events from",
           "destinationId" : "13",
-          "id" : "35",
+          "id" : "26",
           "properties" : {
-            "structurizr.dsl.identifier" : "de83a799-0597-4c0f-91f9-dc8c7d2dc0e8"
+            "structurizr.dsl.identifier" : "d0a3cd5a-6d89-4550-bcf3-65a07707351f"
           },
           "sourceId" : "7",
           "tags" : "Relationship"
         } ],
-        "tags" : "Element,Container"
+        "tags" : "Element,Container",
+        "technology" : "Native app for buyers"
       }, {
-        "description" : "React Native app for merchants",
+        "description" : "Expo (RN)",
         "documentation" : { },
         "group" : "Frontend",
         "id" : "8",
         "name" : "Merchant app",
         "properties" : {
-          "structurizr.dsl.identifier" : "merchantnativeapp"
+          "structurizr.dsl.identifier" : "platform.merchantnativeapp"
         },
         "relationships" : [ {
           "description" : "loads data from",
           "destinationId" : "11",
-          "id" : "32",
+          "id" : "23",
           "properties" : {
-            "structurizr.dsl.identifier" : "20a660e6-6fa9-4dbd-9a74-c23eed45ab45"
+            "structurizr.dsl.identifier" : "4aab1a77-fb7b-4fc9-844a-ecda00c4c084"
           },
           "sourceId" : "8",
           "tags" : "Relationship"
         }, {
           "description" : "subscribe to events from",
           "destinationId" : "13",
-          "id" : "36",
+          "id" : "27",
           "properties" : {
-            "structurizr.dsl.identifier" : "6cb118fd-73cf-4ce2-9a2d-c5b8ab788ad5"
+            "structurizr.dsl.identifier" : "e6931536-1089-4813-a4ab-bc59c4bafc96"
           },
           "sourceId" : "8",
           "tags" : "Relationship"
         } ],
-        "tags" : "Element,Container"
+        "tags" : "Element,Container",
+        "technology" : "Native app for merchants"
       }, {
-        "description" : "React Native app for pick up points",
+        "description" : "Expo (RN)",
         "documentation" : { },
         "group" : "Frontend",
         "id" : "9",
         "name" : "Pick-up Point app",
         "properties" : {
-          "structurizr.dsl.identifier" : "pickuppointnativeapp"
+          "structurizr.dsl.identifier" : "platform.pickuppointnativeapp"
         },
         "relationships" : [ {
           "description" : "loads data from",
           "destinationId" : "11",
-          "id" : "33",
+          "id" : "24",
           "properties" : {
-            "structurizr.dsl.identifier" : "f07f06f7-2ca6-4aed-833d-483d94d09e4b"
+            "structurizr.dsl.identifier" : "be2cb7f0-25ee-40fb-bbdb-5f6ff107d451"
           },
           "sourceId" : "9",
           "tags" : "Relationship"
         }, {
           "description" : "subscribe to events from",
           "destinationId" : "13",
-          "id" : "37",
+          "id" : "28",
           "properties" : {
-            "structurizr.dsl.identifier" : "44f7fda0-c554-4696-96ad-bcb249efecab"
+            "structurizr.dsl.identifier" : "ff691778-6353-42a9-91ab-4ce72e551461"
           },
           "sourceId" : "9",
           "tags" : "Relationship"
         } ],
-        "tags" : "Element,Container"
+        "tags" : "Element,Container",
+        "technology" : "Native app for pick-up points"
       }, {
-        "description" : "Next.js web app for backoffice users",
+        "description" : "Next.js",
         "documentation" : { },
         "group" : "Frontend",
         "id" : "10",
         "name" : "Backoffice web app",
         "properties" : {
-          "structurizr.dsl.identifier" : "backofficewebapp"
+          "structurizr.dsl.identifier" : "platform.backofficewebapp"
         },
         "relationships" : [ {
           "description" : "loads data from",
           "destinationId" : "12",
-          "id" : "30",
+          "id" : "21",
           "properties" : {
-            "structurizr.dsl.identifier" : "77f442fc-dfc2-40d1-a692-dd12820335aa"
+            "structurizr.dsl.identifier" : "4b7c21d9-5fd0-43ff-9aae-2ae96f15fe2d"
           },
           "sourceId" : "10",
           "tags" : "Relationship,=,indirect"
         } ],
-        "tags" : "Element,Container"
+        "tags" : "Element,Container",
+        "technology" : "Web app for backoffice users"
       }, {
         "description" : "Server-side part of the Next.js web app for all users",
         "documentation" : { },
@@ -256,14 +260,14 @@
         "id" : "11",
         "name" : "Client BE",
         "properties" : {
-          "structurizr.dsl.identifier" : "clientfrontendserver"
+          "structurizr.dsl.identifier" : "platform.clientfrontendserver"
         },
         "relationships" : [ {
           "description" : "loads data from and writes data to",
           "destinationId" : "13",
           "id" : "16",
           "properties" : {
-            "structurizr.dsl.identifier" : "314c44d8-3082-4438-8319-6dceca42dc45"
+            "structurizr.dsl.identifier" : "d7b1dfe0-d157-4e55-9028-635c78585a64"
           },
           "sourceId" : "11",
           "tags" : "Relationship"
@@ -276,14 +280,14 @@
         "id" : "12",
         "name" : "BO BE",
         "properties" : {
-          "structurizr.dsl.identifier" : "backofficefrontendserver"
+          "structurizr.dsl.identifier" : "platform.backofficefrontendserver"
         },
         "relationships" : [ {
           "description" : "loads data from and writes data to",
           "destinationId" : "13",
           "id" : "17",
           "properties" : {
-            "structurizr.dsl.identifier" : "115cf27e-4320-4d30-95b9-c50fc1e87122"
+            "structurizr.dsl.identifier" : "d0b89623-c73b-4d82-9961-66b293bd9923"
           },
           "sourceId" : "12",
           "tags" : "Relationship"
@@ -296,14 +300,14 @@
         "id" : "13",
         "name" : "Unified data access",
         "properties" : {
-          "structurizr.dsl.identifier" : "hasura"
+          "structurizr.dsl.identifier" : "platform.hasura"
         },
         "relationships" : [ {
           "description" : "persists and queries data to/from",
           "destinationId" : "14",
           "id" : "18",
           "properties" : {
-            "structurizr.dsl.identifier" : "970f9de9-643c-4202-9b8f-625d4804c9a1"
+            "structurizr.dsl.identifier" : "ba4aa629-2a45-4fb0-a38d-0ae33a55387e"
           },
           "sourceId" : "13",
           "tags" : "Relationship"
@@ -312,7 +316,7 @@
           "destinationId" : "15",
           "id" : "19",
           "properties" : {
-            "structurizr.dsl.identifier" : "7b7639f3-7dda-4cb0-a8ca-bb0a909e4db2"
+            "structurizr.dsl.identifier" : "aa3e1ae9-20a1-4364-86cf-35bf826683fb"
           },
           "sourceId" : "13",
           "tags" : "Relationship"
@@ -325,7 +329,7 @@
         "id" : "14",
         "name" : "DB",
         "properties" : {
-          "structurizr.dsl.identifier" : "database"
+          "structurizr.dsl.identifier" : "platform.database"
         },
         "tags" : "Element,Container"
       }, {
@@ -335,11 +339,31 @@
         "id" : "15",
         "name" : "Notification Service",
         "properties" : {
-          "structurizr.dsl.identifier" : "notificationservice"
+          "structurizr.dsl.identifier" : "platform.notificationservice"
         },
         "tags" : "Element,Container"
       } ],
-      "documentation" : { },
+      "documentation" : {
+        "sections" : [ {
+          "content" : "== Glossary\n\n|===\n| Term | Definition\n| Merchant | A person or company that sells artisan/craft goods or self-grown fruits and vegetables\n| Customer | A person who buys artisan/craft goods or self-grown fruits and vegetables\n| Pickup Point | A location where the merchant drops off and the customer picks up the goods they have ordered\n| Driver | A person who picks up the goods from the merchant and delivers them to the pickup point or the customer\n|===\n",
+          "filename" : "00001-glossary.adoc",
+          "format" : "AsciiDoc",
+          "order" : 1,
+          "title" : ""
+        }, {
+          "content" : "== Data Model\n\nimage::https://www.plantuml.com/plantuml/svg/TLGxRzim4DxrAmvQCXGPkde8aies8iIn1JSQEWKCTRQPK2JBHm6Zw7ylIJr8f-x4kq_ttSTxKFV64crTpmlvzexKGjaQr2KG0yuRyBlu0eBqw0_i2UF-L2SfiFXJp8ndrFH4X8siVdHo9fUKM2P586lPEMfDu4U1KfHmUti7vTTovgRK3QCVq2fe91lpAu-qAlh_aP0A1HF7H-dqTPaiHN4pNTu09GA85nr5m2bG8SQ0r42bunsSo2-4td7B5CVFKLO2FKbf40vQziNSY5bQN4hFHUvqDxPS1YkMvSTYdScx7AFWUyHJyE17IhLVFRoibi7QRTVr_ZdQorMrgRS3_B2jLfjDj9kwUeg69or_lAvt-zS0jOs7rkrcNSUuV-HhYtqI3rwK_kbyeSoUqu1pQZD0m_W6En-TqepYbNXuEIlCIS7FYHqQgfcQDejHwtJ0_IRWKUfm6oVOjQj0DORawISiINXYBdqno4kELvWR4aAcBapb1YnjTuvc0cEI26V3pT0fnG8EZXyOvzXzEy_VGxQqNukBPKivmdDO0DNehvxOuLrCjSsb5FSekl1l-0i0[]\n",
+          "filename" : "00002-data-model.adoc",
+          "format" : "AsciiDoc",
+          "order" : 2,
+          "title" : ""
+        }, {
+          "content" : "== Order fulfillment\n\n=== Merchant as Driver\nimage::https://www.plantuml.com/plantuml/svg/bP9DRiCW48Ntd6AKJLUvG1PLgdIRofiSOCoFEWe616DNldt7mIInsaMx1DwRz_7WM1WpZuDNg3bcE8s5us3pkZpRh3ynyBhSTQIlS4dGHGgy0opGNJgbaimWJKcKy9QIKcqCx5-NZGESuf1YiO31G1dxWHXYDY901eIXnOXsiRJO0tn49ZVV1H0T1FjLlKqj27TXMW3716a1tAhRKDW_e8AZFAmav83ufOYr5Egz1OxWHk_8UoKHFsrYsCPH0PoGF8gxmRKcxeIwLIDmDLZNUSWKmnFbcdR6V6rT5SWMpGnEti9OJvFDyvzQg7wvK6-RqPfDrit-NeyUyisWsiAltM7EDA7_nwMRu_cdt1YwDR8-sj46i_pERm00[]\n\n=== Separate Driver\nimage::https://www.plantuml.com/plantuml/svg/bPDDRiCW48NtFiKecwvoWIogL8dKLIflSe2n0NKK30Xm8j--u-3nZvf5kx8mxytt_C37b37clhCLjjb7EFKf-qx7QNdHiVr6bwVbhgRs1jS0jIUNTu09wcizRPuZtTbO1Hv8BGMsmKS8LIKpOVy-lZZ0oNV19mte5AI-wIY3Zue5c06X4oPhHujaEC2NpsI6MG3UWDEFuXKrvvc5OKpR1mXZsgrQXi9-2UKCnMvAGWOeloMsfaIDrP0zcDuQihPYn6yR6xOuIe1t98libd3In9ombMeuN06tPHvcycwLSg9TCDwagmHHenh0SFTAsx7yGK3bB6QCUYuN27zCeyMarP-wU-rS9nJe9p_IeY_mgkpEc7CPiSWsmDBnovF1o8FG_gDISQpluJD3FI7BbJXgfyOVuGS0[]\n",
+          "filename" : "00003-workflow-order-fulfillment.adoc",
+          "format" : "AsciiDoc",
+          "order" : 3,
+          "title" : ""
+        } ]
+      },
       "id" : "5",
       "location" : "Unspecified",
       "name" : "Online Local Market Platform",
@@ -351,13 +375,12 @@
   },
   "name" : "Name",
   "properties" : {
-    "structurizr.dsl" : "IWNvbnN0YW50IE5BTUVTUEFDRSBvbmxpbmUtbG9jYWwtbWFya2V0LXBsYXRmb3JtCiFjb25zdGFudCBQUk9KRUNUIG9ubGluZS1sb2NhbC1tYXJrZXQtcGxhdGZvcm0KCndvcmtzcGFjZSB7CiAgbW9kZWwgewogICAgYnV5ZXIgPSBwZXJzb24gIkJ1eWVyIgogICAgbWVyY2hhbnQgPSBwZXJzb24gIk1lcmNoYW50IgogICAgcGlja1VwUG9pbnQgPSBwZXJzb24gIlBpY2sgVXAgUG9pbnQiCiAgICBiYWNrb2ZmaWNlQWdlbnQgPSBwZXJzb24gIkJhY2tvZmZpY2UgQWdlbnQiCgogICAgcGxhdGZvcm0gPSBzb2Z0d2FyZVN5c3RlbSAiT25saW5lIExvY2FsIE1hcmtldCBQbGF0Zm9ybSIgewogICAgICBmcm9udGVuZCA9IGdyb3VwICJGcm9udGVuZCIgewogICAgICAgIGNvbW1lcmNlV2ViQXBwID0gY29udGFpbmVyICJCdXllciB3ZWIgYXBwIiAiTmV4dC5qcyB3ZWIgYXBwIGZvciBidXllcnMiCiAgICAgICAgY29tbWVyY2VOYXRpdmVBcHAgPSBjb250YWluZXIgIkJ1eWVyIGFwcCIgIlJlYWN0IE5hdGl2ZSBhcHAgZm9yIGJ1eWVycyIKICAgICAgICBtZXJjaGFudE5hdGl2ZUFwcCA9IGNvbnRhaW5lciAiTWVyY2hhbnQgYXBwIiAiUmVhY3QgTmF0aXZlIGFwcCBmb3IgbWVyY2hhbnRzIgogICAgICAgIHBpY2tVcFBvaW50TmF0aXZlQXBwID0gY29udGFpbmVyICJQaWNrLXVwIFBvaW50IGFwcCIgIlJlYWN0IE5hdGl2ZSBhcHAgZm9yIHBpY2sgdXAgcG9pbnRzIgoKICAgICAgICBiYWNrb2ZmaWNlV2ViQXBwID0gY29udGFpbmVyICJCYWNrb2ZmaWNlIHdlYiBhcHAiICJOZXh0LmpzIHdlYiBhcHAgZm9yIGJhY2tvZmZpY2UgdXNlcnMiCiAgICAgIH0KCiAgICAgIGJhY2tlbmQgPSBncm91cCAiQmFja2VuZCIgewogICAgICAgIGNsaWVudEZyb250ZW5kU2VydmVyID0gY29udGFpbmVyICJDbGllbnQgQkUiICJTZXJ2ZXItc2lkZSBwYXJ0IG9mIHRoZSBOZXh0LmpzIHdlYiBhcHAgZm9yIGFsbCB1c2VycyIKICAgICAgICBiYWNrb2ZmaWNlRnJvbnRlbmRTZXJ2ZXIgPSBjb250YWluZXIgIkJPIEJFIiAiU2VydmVyLXNpZGUgcGFydCBvZiB0aGUgTmV4dC5qcyB3ZWIgYXBwIGZvciBiYWNrb2ZmaWNlIHVzZXJzIgoKICAgICAgICBoYXN1cmEgPSBjb250YWluZXIgIlVuaWZpZWQgZGF0YSBhY2Nlc3MiICJIYXN1cmEgZm9yIFVuaWZpZWQgRGF0YSBBY2Nlc3MiCgogICAgICAgIGRhdGFiYXNlID0gY29udGFpbmVyICJEQiIgIlBvc3RncmVTUUwiCgogICAgICAgIG5vdGlmaWNhdGlvblNlcnZpY2UgPSBjb250YWluZXIgIk5vdGlmaWNhdGlvbiBTZXJ2aWNlIiAiVEJEIHRoaXJkLXBhcnR5IHNlcnZpY2UiCgogICAgICAgIGNsaWVudEZyb250ZW5kU2VydmVyIC0+IGhhc3VyYSAibG9hZHMgZGF0YSBmcm9tIGFuZCB3cml0ZXMgZGF0YSB0byIKICAgICAgICBiYWNrb2ZmaWNlRnJvbnRlbmRTZXJ2ZXIgLT4gaGFzdXJhICJsb2FkcyBkYXRhIGZyb20gYW5kIHdyaXRlcyBkYXRhIHRvIgoKICAgICAgICBoYXN1cmEgLT4gZGF0YWJhc2UgInBlcnNpc3RzIGFuZCBxdWVyaWVzIGRhdGEgdG8vZnJvbSIKICAgICAgICBoYXN1cmEgLT4gbm90aWZpY2F0aW9uU2VydmljZSAiY29ubmVjdHMgcmVxdWVzdHMgdG8iCiAgICAgIH0KICAgIH0KCiAgICBidXllciAtPiBjb21tZXJjZVdlYkFwcCAidXNlcyIKICAgIGJ1eWVyIC0+IGNvbW1lcmNlTmF0aXZlQXBwICJ1c2VzIgogICAgbWVyY2hhbnQgLT4gbWVyY2hhbnROYXRpdmVBcHAgInVzZXMiCiAgICBwaWNrVXBQb2ludCAtPiBwaWNrVXBQb2ludE5hdGl2ZUFwcCAidXNlcyIKICAgIGJhY2tvZmZpY2VBZ2VudCAtPiBiYWNrb2ZmaWNlV2ViQXBwICJ1c2VzIgoKICAgIGNvbW1lcmNlV2ViQXBwIC0+IGNsaWVudEZyb250ZW5kU2VydmVyICJsb2FkcyBkYXRhIGZyb20iIHsKICAgICAgdGFncyA9IGluZGlyZWN0CiAgICB9CgogICAgYmFja29mZmljZVdlYkFwcCAtPiBiYWNrb2ZmaWNlRnJvbnRlbmRTZXJ2ZXIgImxvYWRzIGRhdGEgZnJvbSIgewogICAgICB0YWdzID0gaW5kaXJlY3QKICAgIH0KCiAgICBjb21tZXJjZU5hdGl2ZUFwcCAtPiBjbGllbnRGcm9udGVuZFNlcnZlciAibG9hZHMgZGF0YSBmcm9tIgogICAgbWVyY2hhbnROYXRpdmVBcHAgLT4gY2xpZW50RnJvbnRlbmRTZXJ2ZXIgImxvYWRzIGRhdGEgZnJvbSIKICAgIHBpY2tVcFBvaW50TmF0aXZlQXBwIC0+IGNsaWVudEZyb250ZW5kU2VydmVyICJsb2FkcyBkYXRhIGZyb20iCgogICAgY29tbWVyY2VXZWJBcHAgLT4gaGFzdXJhICJzdWJzY3JpYmUgdG8gZXZlbnRzIGZyb20iCiAgICBjb21tZXJjZU5hdGl2ZUFwcCAtPiBoYXN1cmEgInN1YnNjcmliZSB0byBldmVudHMgZnJvbSIKICAgIG1lcmNoYW50TmF0aXZlQXBwIC0+IGhhc3VyYSAic3Vic2NyaWJlIHRvIGV2ZW50cyBmcm9tIgogICAgcGlja1VwUG9pbnROYXRpdmVBcHAgLT4gaGFzdXJhICJzdWJzY3JpYmUgdG8gZXZlbnRzIGZyb20iCiAgfQoKICB2aWV3cyB7CiAgICBzeXN0ZW1Db250ZXh0IHBsYXRmb3JtICJQbGF0Zm9ybSIgewogICAgICBpbmNsdWRlICoKICAgICAgYXV0b2xheW91dCBscgoKICAgIH0KCiAgICBjb250YWluZXIgcGxhdGZvcm0gIkdlbmVyaWMiIHsKICAgICAgaW5jbHVkZSAqCiAgICAgIGF1dG9sYXlvdXQgbHIKICAgIH0KCiAgICBzdHlsZXMgewogICAgICBlbGVtZW50ICJQZXJzb24iIHsKICAgICAgICBzaGFwZSBwZXJzb24KICAgICAgfQogICAgfQogIH0KfQo="
+    "structurizr.dsl" : "d29ya3NwYWNlIHsKICAhaWRlbnRpZmllcnMgaGllcmFyY2hpY2FsCgogIG1vZGVsIHsKICAgIGJ1eWVyID0gcGVyc29uICJCdXllciIKICAgIG1lcmNoYW50ID0gcGVyc29uICJNZXJjaGFudCIKICAgIHBpY2tVcFBvaW50ID0gcGVyc29uICJQaWNrIFVwIFBvaW50IgogICAgYmFja29mZmljZUFnZW50ID0gcGVyc29uICJCYWNrb2ZmaWNlIEFnZW50IgoKICAgIHBsYXRmb3JtID0gc29mdHdhcmVTeXN0ZW0gIk9ubGluZSBMb2NhbCBNYXJrZXQgUGxhdGZvcm0iIHsKICAgICAgIWRvY3MgZG9jCiAgICAgICFhZHJzIGRvYy9hZHIKICAgICAgIXBsdWdpbiBwbGFudHVtbC5QbGFudFVNTEVuY29kZXJQbHVnaW4KCiAgICAgIGZyb250ZW5kID0gZ3JvdXAgIkZyb250ZW5kIiB7CiAgICAgICAgY29tbWVyY2VXZWJBcHAgPSBjb250YWluZXIgIkJ1eWVyIHdlYiBhcHAiICJOZXh0LmpzIiAiV2ViIGFwcCBmb3IgYnV5ZXJzIgogICAgICAgIGNvbW1lcmNlTmF0aXZlQXBwID0gY29udGFpbmVyICJCdXllciBhcHAiICJFeHBvIChSTikiICJOYXRpdmUgYXBwIGZvciBidXllcnMiCiAgICAgICAgbWVyY2hhbnROYXRpdmVBcHAgPSBjb250YWluZXIgIk1lcmNoYW50IGFwcCIgIkV4cG8gKFJOKSIgIk5hdGl2ZSBhcHAgZm9yIG1lcmNoYW50cyIKICAgICAgICBwaWNrVXBQb2ludE5hdGl2ZUFwcCA9IGNvbnRhaW5lciAiUGljay11cCBQb2ludCBhcHAiICJFeHBvIChSTikiICJOYXRpdmUgYXBwIGZvciBwaWNrLXVwIHBvaW50cyIKCiAgICAgICAgYmFja29mZmljZVdlYkFwcCA9IGNvbnRhaW5lciAiQmFja29mZmljZSB3ZWIgYXBwIiAiTmV4dC5qcyIgIldlYiBhcHAgZm9yIGJhY2tvZmZpY2UgdXNlcnMiCiAgICAgIH0KCiAgICAgIGJhY2tlbmQgPSBncm91cCAiQmFja2VuZCIgewogICAgICAgIGNsaWVudEZyb250ZW5kU2VydmVyID0gY29udGFpbmVyICJDbGllbnQgQkUiICJTZXJ2ZXItc2lkZSBwYXJ0IG9mIHRoZSBOZXh0LmpzIHdlYiBhcHAgZm9yIGFsbCB1c2VycyIKICAgICAgICBiYWNrb2ZmaWNlRnJvbnRlbmRTZXJ2ZXIgPSBjb250YWluZXIgIkJPIEJFIiAiU2VydmVyLXNpZGUgcGFydCBvZiB0aGUgTmV4dC5qcyB3ZWIgYXBwIGZvciBiYWNrb2ZmaWNlIHVzZXJzIgoKICAgICAgICBoYXN1cmEgPSBjb250YWluZXIgIlVuaWZpZWQgZGF0YSBhY2Nlc3MiICJIYXN1cmEgZm9yIFVuaWZpZWQgRGF0YSBBY2Nlc3MiCgogICAgICAgIGRhdGFiYXNlID0gY29udGFpbmVyICJEQiIgIlBvc3RncmVTUUwiCgogICAgICAgIG5vdGlmaWNhdGlvblNlcnZpY2UgPSBjb250YWluZXIgIk5vdGlmaWNhdGlvbiBTZXJ2aWNlIiAiVEJEIHRoaXJkLXBhcnR5IHNlcnZpY2UiCgogICAgICAgIGNsaWVudEZyb250ZW5kU2VydmVyIC0+IGhhc3VyYSAibG9hZHMgZGF0YSBmcm9tIGFuZCB3cml0ZXMgZGF0YSB0byIKICAgICAgICBiYWNrb2ZmaWNlRnJvbnRlbmRTZXJ2ZXIgLT4gaGFzdXJhICJsb2FkcyBkYXRhIGZyb20gYW5kIHdyaXRlcyBkYXRhIHRvIgoKICAgICAgICBoYXN1cmEgLT4gZGF0YWJhc2UgInBlcnNpc3RzIGFuZCBxdWVyaWVzIGRhdGEgdG8vZnJvbSIKICAgICAgICBoYXN1cmEgLT4gbm90aWZpY2F0aW9uU2VydmljZSAiY29ubmVjdHMgcmVxdWVzdHMgdG8iCiAgICAgIH0KCiAgICAgIGNvbW1lcmNlV2ViQXBwIC0+IGNsaWVudEZyb250ZW5kU2VydmVyICJsb2FkcyBkYXRhIGZyb20iIHsKICAgICAgICB0YWdzID0gaW5kaXJlY3QKICAgICAgfQoKICAgICAgYmFja29mZmljZVdlYkFwcCAtPiBiYWNrb2ZmaWNlRnJvbnRlbmRTZXJ2ZXIgImxvYWRzIGRhdGEgZnJvbSIgewogICAgICAgIHRhZ3MgPSBpbmRpcmVjdAogICAgICB9CgogICAgICBjb21tZXJjZU5hdGl2ZUFwcCAtPiBjbGllbnRGcm9udGVuZFNlcnZlciAibG9hZHMgZGF0YSBmcm9tIgogICAgICBtZXJjaGFudE5hdGl2ZUFwcCAtPiBjbGllbnRGcm9udGVuZFNlcnZlciAibG9hZHMgZGF0YSBmcm9tIgogICAgICBwaWNrVXBQb2ludE5hdGl2ZUFwcCAtPiBjbGllbnRGcm9udGVuZFNlcnZlciAibG9hZHMgZGF0YSBmcm9tIgoKICAgICAgY29tbWVyY2VXZWJBcHAgLT4gaGFzdXJhICJzdWJzY3JpYmUgdG8gZXZlbnRzIGZyb20iCiAgICAgIGNvbW1lcmNlTmF0aXZlQXBwIC0+IGhhc3VyYSAic3Vic2NyaWJlIHRvIGV2ZW50cyBmcm9tIgogICAgICBtZXJjaGFudE5hdGl2ZUFwcCAtPiBoYXN1cmEgInN1YnNjcmliZSB0byBldmVudHMgZnJvbSIKICAgICAgcGlja1VwUG9pbnROYXRpdmVBcHAgLT4gaGFzdXJhICJzdWJzY3JpYmUgdG8gZXZlbnRzIGZyb20iCiAgICB9CgogICAgYnV5ZXIgLT4gcGxhdGZvcm0uY29tbWVyY2VXZWJBcHAgInVzZXMiCiAgICBidXllciAtPiBwbGF0Zm9ybS5jb21tZXJjZU5hdGl2ZUFwcCAidXNlcyIKICAgIG1lcmNoYW50IC0+IHBsYXRmb3JtLm1lcmNoYW50TmF0aXZlQXBwICJ1c2VzIgogICAgcGlja1VwUG9pbnQgLT4gcGxhdGZvcm0ucGlja1VwUG9pbnROYXRpdmVBcHAgInVzZXMiCiAgICBiYWNrb2ZmaWNlQWdlbnQgLT4gcGxhdGZvcm0uYmFja29mZmljZVdlYkFwcCAidXNlcyIKICB9CgogIHZpZXdzIHsKICAgIHN5c3RlbUNvbnRleHQgcGxhdGZvcm0gIlBsYXRmb3JtIiB7CiAgICAgIGluY2x1ZGUgKgogICAgICBhdXRvbGF5b3V0IGxyCgogICAgfQoKICAgIGNvbnRhaW5lciBwbGF0Zm9ybSAiR2VuZXJpYyIgewogICAgICBpbmNsdWRlICoKICAgICAgYXV0b2xheW91dCBscgogICAgfQoKICAgIHN0eWxlcyB7CiAgICAgIGVsZW1lbnQgIlBlcnNvbiIgewogICAgICAgIHNoYXBlIHBlcnNvbgogICAgICB9CiAgICB9CiAgfQp9Cg=="
   },
   "views" : {
     "configuration" : {
       "branding" : { },
       "lastSavedView" : "Generic",
-      "metadataSymbols" : "SquareBrackets",
       "styles" : {
         "elements" : [ {
           "shape" : "Person",
@@ -368,7 +391,7 @@
     },
     "containerViews" : [ {
       "automaticLayout" : {
-        "applied" : true,
+        "applied" : false,
         "edgeSeparation" : 0,
         "implementation" : "Graphviz",
         "nodeSeparation" : 300,
@@ -376,66 +399,62 @@
         "rankSeparation" : 300,
         "vertices" : false
       },
-      "dimensions" : {
-        "height" : 3305,
-        "width" : 3840
-      },
       "elements" : [ {
         "id" : "1",
-        "x" : 199,
-        "y" : 390
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "2",
-        "x" : 199,
-        "y" : 1290
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "3",
-        "x" : 199,
-        "y" : 1990
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "4",
-        "x" : 199,
-        "y" : 2690
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "6",
-        "x" : 899,
-        "y" : 240
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "7",
-        "x" : 899,
-        "y" : 840
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "8",
-        "x" : 899,
-        "y" : 1440
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "9",
-        "x" : 899,
-        "y" : 2040
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "10",
-        "x" : 899,
-        "y" : 2640
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "11",
-        "x" : 1649,
-        "y" : 1911
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "12",
-        "x" : 1649,
-        "y" : 2511
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "13",
-        "x" : 2399,
-        "y" : 1911
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "14",
-        "x" : 3149,
-        "y" : 2511
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "15",
-        "x" : 3149,
-        "y" : 1911
+        "x" : 0,
+        "y" : 0
       } ],
       "externalSoftwareSystemBoundariesVisible" : false,
       "key" : "Generic",
@@ -451,64 +470,31 @@
       }, {
         "id" : "20"
       }, {
+        "id" : "21"
+      }, {
         "id" : "22"
       }, {
         "id" : "23"
       }, {
+        "id" : "24"
+      }, {
         "id" : "25"
+      }, {
+        "id" : "26"
       }, {
         "id" : "27"
       }, {
-        "id" : "29",
-        "vertices" : [ {
-          "x" : 1453,
-          "y" : 690
-        } ]
+        "id" : "28"
       }, {
-        "id" : "30"
+        "id" : "29"
       }, {
-        "id" : "31",
-        "vertices" : [ {
-          "x" : 1453,
-          "y" : 1290
-        } ]
+        "id" : "31"
       }, {
         "id" : "32"
       }, {
-        "id" : "33"
+        "id" : "34"
       }, {
-        "id" : "34",
-        "vertices" : [ {
-          "x" : 1453,
-          "y" : 690
-        }, {
-          "x" : 2099,
-          "y" : 1336
-        } ]
-      }, {
-        "id" : "35",
-        "vertices" : [ {
-          "x" : 2099,
-          "y" : 1577
-        } ]
-      }, {
-        "id" : "36",
-        "vertices" : [ {
-          "x" : 2099,
-          "y" : 1682
-        } ]
-      }, {
-        "id" : "37",
-        "vertices" : [ {
-          "x" : 1453,
-          "y" : 1890
-        }, {
-          "x" : 1545,
-          "y" : 1761
-        }, {
-          "x" : 2099,
-          "y" : 1761
-        } ]
+        "id" : "36"
       } ],
       "softwareSystemId" : "5"
     } ],
@@ -547,13 +533,13 @@
       "key" : "Platform",
       "order" : 1,
       "relationships" : [ {
-        "id" : "21"
+        "id" : "30"
       }, {
-        "id" : "24"
+        "id" : "33"
       }, {
-        "id" : "26"
+        "id" : "35"
       }, {
-        "id" : "28"
+        "id" : "37"
       } ],
       "softwareSystemId" : "5"
     } ]

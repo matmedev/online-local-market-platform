@@ -1,0 +1,9 @@
+== Glossary
+
+|===
+| Term | Definition
+| Merchant | A person or company that sells artisan/craft goods or self-grown fruits and vegetables
+| Customer | A person who buys artisan/craft goods or self-grown fruits and vegetables
+| Pickup Point | A location where the merchant drops off and the customer picks up the goods they have ordered
+| Driver | A person who picks up the goods from the merchant and delivers them to the pickup point or the customer
+|===
