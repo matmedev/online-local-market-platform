@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "dev:up": "nx run-many --target=docker --all && docker compose up -d"
+    "dev:up": "nx run-many --target=docker --all && docker compose up -d",
+    "dev:stop": "docker compose down"
   },
   "private": true,
   "devDependencies": {

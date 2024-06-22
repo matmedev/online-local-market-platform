@@ -11,7 +11,7 @@ services:
       POSTGRES_PASSWORD: online-local-market
       POSTGRES_DB: online-local-market
   hasura:
-    image: hasura/graphql-engine:v2.40.0
+    image: online-local-market-platform-hasura:latest
     ports:
       - '8080:8080'
     depends_on:
