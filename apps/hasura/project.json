@@ -1,0 +1,17 @@
+{
+  "name": "hasura",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/hasura",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "docker": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "docker build -f ./apps/hasura/Dockerfile ./apps/hasura -t online-local-market-platform-hasura"
+        ]
+      }
+    }
+  }
+}

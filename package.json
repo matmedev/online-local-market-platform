@@ -2,7 +2,9 @@
   "name": "@online-local-market-platform/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "dev:up": "nx run-many --target=docker --all && docker compose up -d"
+  },
   "private": true,
   "devDependencies": {
     "@nx/esbuild": "19.3.0",

@@ -1,0 +1,35 @@
+services:
+  db:
+    image: postgres:16.3
+    restart: always
+    ports:
+      - '5432:5432'
+    volumes:
+      - main-db:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: master
+      POSTGRES_PASSWORD: online-local-market
+      POSTGRES_DB: online-local-market
+  hasura:
+    image: hasura/graphql-engine:v2.40.0
+    ports:
+      - '8080:8080'
+    depends_on:
+      - 'db'
+    restart: always
+    environment:
+      ## Settings are available at https://hasura.io/docs/2.0/graphql/core/deployment/graphql-engine-flags/reference.html
+      HASURA_GRAPHQL_DATABASE_URL: postgres://master:online-local-market@db:5432/online-local-market
+      HASURA_GRAPHQL_ENABLE_CONSOLE: 'true' # disable this when using hasura cli
+      ## enable debugging mode. It is recommended to disable this in production
+      HASURA_GRAPHQL_DEV_MODE: 'true'
+      HASURA_GRAPHQL_ENABLED_LOG_TYPES: startup, http-log, webhook-log, websocket-log, query-log
+      HASURA_GRAPHQL_ADMIN_SECRET: admin
+      ## use this role by default
+      HASURA_GRAPHQL_UNAUTHORIZED_ROLE: anonymous
+      ## do not send usage statistics back to Hasura
+      HASURA_GRAPHQL_ENABLE_TELEMETRY: 'false'
+      ## CORS settings
+      # HASURA_GRAPHQL_CORS_DOMAIN: 'http://localhost:8080, http://localhost:4200, http://localhost:9695'
+volumes:
+  main-db:
