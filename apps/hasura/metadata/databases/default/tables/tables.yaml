@@ -1,1 +1,4 @@
-[]
+- "!include public_merchant.yaml"
+- "!include public_product.yaml"
+- "!include public_product_category.yaml"
+- "!include public_product_type.yaml"
